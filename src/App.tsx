@@ -1,10 +1,15 @@
 import React from "react";
+import { Navigate } from "./components/Navigate";
+
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 
 function App() {
   return (
     <div>
-      <h1 className="text-blue-300 italic text-4xl">App</h1>
+      <BrowserRouter>
+        <Navigate />
+      </BrowserRouter>
     </div>
   );
 }
